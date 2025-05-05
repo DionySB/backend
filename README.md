@@ -1,6 +1,5 @@
-# Fly Now Systems - Backend (Laravel 12)
+# Fly Now Systems - Backend (Laravel 11)
 
-Teste técnico para a vaga de Desenvolvedor(a) Júnior.
 API REST para gerenciamento de tarefas com autenticação, filas, testes, documentação e estrutura limpa.
 
 ---/---
@@ -32,18 +31,6 @@ cp .env.example .env
 ## Login e Autenticação
 
 A autenticação usa Laravel Sanctum.
-
-Faz login via:
-
-```http
-POST /api/login
-{
-  "email": "admin@email.com",
-  "password": "123456"
-}
-```
-
-O token vem na resposta. Usa isso no header das próximas requisições (caso não use o scramble)
 
 ```
 Authorization: Bearer {token}
